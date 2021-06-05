@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+
+    <style>
+        h2{
+            font-family: 'Limelight', cursive;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans&display=swap" rel="stylesheet">
+<body style="background-color: blanchedalmond;">
+    <div align="center">
+        <h2>Prediction</h2>
+        {%if data == 'Iris-setosa' %}
+            <img src="https://alchetron.com/cdn/iris-setosa-0ab3145a-68f2-41ca-a529-c02fa2f5b02-resize-750.jpeg" alt="setosa">
+
+        
+        {%elif data == 'Iris-versicolor' %}
+            <img src="https://homeopathyplus.com/wp-content/uploads/2018/04/Iris-1.jpg" alt="versicolor">
+
+        
+        {%else%}
+            <img src="https://www.fs.fed.us/wildflowers/beauty/iris/Blue_Flag/images/iris_virginica/iris_virginica_virginica_lg.jpg" alt="virginica">
+        
+        {%endif%}
+        <p>Model predicted that the flower belongs to {{data}}</p>    
+    </div>
+    
+</body>
+</html>
